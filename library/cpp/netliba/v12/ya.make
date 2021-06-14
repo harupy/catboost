@@ -35,7 +35,7 @@ SRCS(
     udp_test.cpp
 )
 
-IF (OS_LINUX AND NOT CATBOOST_OPENSOURCE)
+IF (OS_LINUX AND CATBOOST_OPENSOURCE)
     PEERDIR(
         contrib/libs/ibdrv
     )
